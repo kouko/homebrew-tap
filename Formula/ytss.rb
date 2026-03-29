@@ -1,23 +1,23 @@
 class Ytss < Formula
   desc "YouTube batch subtitle scraper with whisper transcription and LLM summaries"
   homepage "https://github.com/kouko/youtube-summarize-scraper"
-  version "0.5.0"
+  version "0.5.1"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/kouko/youtube-summarize-scraper/releases/download/v#{version}/ytss-darwin-arm64.tar.gz"
-      sha256 "0d07dab08380499e003690788033b08588a5576545fca2e802d13c8d651c0d1b"
+      sha256 "41c6aae3bc9b94d4d3138d0d5a1ff102825026dd1df39d75f7f31aa33c6d3bc5"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/kouko/youtube-summarize-scraper/releases/download/v#{version}/ytss-linux-arm64.tar.gz"
-      sha256 "e3e44a981893d77887b7be3666fa1234bae077d1d60fe536fc5c58d967f806f3"
+      sha256 "565769f917fb48d4ee21921e100ab6d63d1f873cc13971c283d8eff9847f1660"
     else
       url "https://github.com/kouko/youtube-summarize-scraper/releases/download/v#{version}/ytss-linux-amd64.tar.gz"
-      sha256 "7fbe442d3830e733f79c40ed61452c41a1377b2f2a376d611a6d21f525e12849"
+      sha256 "2eaa5fdcc869b2d88327204be80b0f68844ef981c3bba0ae4ebe9f16b5bfcf60"
     end
   end
 
