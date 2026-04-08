@@ -1,13 +1,13 @@
 class Metr < Formula
   desc "Meeting transcriber with speaker identification and emotion recognition"
   homepage "https://github.com/kouko/meeting-emo-transcriber"
-  version "0.1.4"
+  version "0.1.5"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/kouko/meeting-emo-transcriber/releases/download/v#{version}/metr-darwin-arm64.tar.gz"
-      sha256 "39947c3b69ff2ad06cc06f1cc78de100d4161d83b5be43801ba26a96a0b7590b"
+      sha256 "e96d47734bc7e5389dfb4241fa60729ff7d33b0fc84b33d8eaf0da38478bf9df"
     end
   end
 
